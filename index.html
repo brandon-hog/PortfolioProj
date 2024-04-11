@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/CSS/index.css">
 </head>
 <body>
@@ -13,15 +16,15 @@
         <nav>
             <ul>
                 <!-- FIXME add in links later to parts -->
-                <li><a href="">Bio</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-info">Contact Me</a></li>
             </ul>
         </nav>
     </header>
     <!-- Talk about bio -->
-    <div class="bio">
+    <div class="bio centerflex" id="bio">
         <h2>Biography</h2>
         <p>Brandon was born in Bossier City, LA, but has little recollection of it because
             he was a part of a military family. Among all that changed while he had 
@@ -34,14 +37,21 @@
         </p>
     </div>
     <!-- talk about education -->
-    <div class="education">
-        <h2>Education</h2>
-        <h3>Pensacola State College</h3>
-        <h4>AA In General Studies</h4>
-        <h5>GPA: <strong>4.0 <em>(Summa Cum Laude)</em></strong></h5>
+    <h2>Education</h2>
+    <div class="education" id="education">
+        <div class="PSC">
+            <h3>Pensacola State College</h3>
+            <h4>AA In General Studies</h4>
+            <h5>GPA: <strong>4.0 <em>Summa Cum Laude</em></strong></h5>
+        </div>
+        <div class="UWF">
+            <h3>University of West Florida</h3>
+            <h4>B.S. of Computer Science</h4>
+            <h5>GPA: Currently undefined - first semester.</h5>
+        </div>
     </div>
     <!-- talk about projects -->
-    <div class="projects">
+    <div class="projects centerflex" id="projects">
         <h2>Coming soon!</h2>
         <p>I will be working a lot on projects this summer, but as of currently 
             all of my projects are very elementary and I have not done anything 
@@ -51,7 +61,7 @@
     <!-- create a footer with contact information -->
     <footer>
         <h2>Contact Information</h2>
-        <ul class="contact-info">
+        <ul class="contact-info centerflex" id="contact-info">
             <li>(850)-776-6628</li>
             <li>brandon.m.hoggatt@gmail.com</li> 
         </ul>

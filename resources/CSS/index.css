@@ -1,1 +1,124 @@
+/* general rules */
+* {
+    font-family: "Roboto";
+}
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* header section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* center using flex */
+.centerflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centerflex p {
+    max-width: 600px;
+}
+
+/* treat education differently, because I want my education places displayed side by side, not 
+in the direction of column */
+.education {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.PSC {
+    background-image: url("../images/pscimage.jpg");
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.UWF {
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    background-image: url("../images/uwfimage.png");
+    background-color: rgba(255, 255, 255, 0.9);
+    background-position: center;
+    width: fit-content;
+    color: white;
+}
+
+/* footer section */
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    bottom: 0;
+    min-height: 100px;
+    flex-direction: row;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
