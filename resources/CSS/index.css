@@ -68,6 +68,7 @@ a {
 
 .centerflex p {
     max-width: 600px;
+    margin: 10px 0 20px 0;
 }
 
 /* treat education differently, because I want my education places displayed side by side, not 
