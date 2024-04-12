@@ -1,6 +1,7 @@
 /* general rules */
 * {
     font-family: "Roboto";
+    color: white;
 }
 
 html {
@@ -25,6 +26,7 @@ body div {
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(44, 43, 43);
 }
 
 /* header section */
@@ -51,7 +53,25 @@ nav ul li {
     background-color: gray;
     border-radius: 10px;
     padding: 5px;
+    transition: background-color 1s;
+    box-shadow: 0 4px 2px -2px black;
 }
+
+/* create some animations to make the buttons feel cleaner and overall better */
+nav ul li:hover {
+    background-color: lightgray;
+
+}
+
+a:hover {
+    color: black;
+}
+
+nav ul li:active {
+    background-color: white;
+}
+
+/* event animations end here */
 
 a {
     color: white;
