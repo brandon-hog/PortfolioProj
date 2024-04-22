@@ -70,10 +70,6 @@ nav ul li {
     box-shadow: 0 4px 2px -2px black;
 }
 
-#darkmode {
-
-}
-
 /* create some animations to make the buttons feel cleaner and overall better */
 nav ul li:hover {
     background-color: lightgray;
