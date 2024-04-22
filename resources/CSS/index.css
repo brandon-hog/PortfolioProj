@@ -38,12 +38,14 @@ header {
 }
 
 nav {
-    width: 60%;
+    min-width: 60%;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding: 0;
 }
 
 nav ul li {
@@ -53,6 +55,7 @@ nav ul li {
     background-color: gray;
     border-radius: 10px;
     padding: 5px;
+    margin: 10px;
     transition: background-color 1s;
     box-shadow: 0 4px 2px -2px black;
 }
@@ -89,6 +92,27 @@ a {
 .centerflex p {
     max-width: 600px;
     margin: 10px 0 20px 0;
+}
+
+/* style my pfp */
+#pfp {
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.aboutme p {
+    max-width: 300px;
+    margin-left: 20px;
 }
 
 /* treat education differently, because I want my education places displayed side by side, not 
@@ -147,4 +171,30 @@ footer ul {
 
 footer ul li {
     margin: 0 10px 0 10px;
+}
+
+/* start on some media queries */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .aboutme {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    #pfp {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    html {
+        font-size: 8px;
+    }
 }
