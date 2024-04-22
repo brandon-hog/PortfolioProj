@@ -1,7 +1,7 @@
 /* general rules */
 * {
     font-family: "Roboto";
-    color: white;
+    color: black;
 }
 
 html {
@@ -26,7 +26,17 @@ body div {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(44, 43, 43);
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.UWF,
+h3,
+h4,
+h5,
+strong,
+em {
+    color: white !important;
 }
 
 /* header section */
@@ -58,6 +68,10 @@ nav ul li {
     margin: 10px;
     transition: background-color 1s;
     box-shadow: 0 4px 2px -2px black;
+}
+
+#darkmode {
+
 }
 
 /* create some animations to make the buttons feel cleaner and overall better */
@@ -153,7 +167,7 @@ footer {
     padding: 10px 0 20px 0;
     width: 100%;
     box-sizing: border-box;
-    color: white;
+    color: white !important;
     background-color: black;
     bottom: 0;
     min-height: 100px;
@@ -171,6 +185,13 @@ footer ul {
 
 footer ul li {
     margin: 0 10px 0 10px;
+}
+
+footer ul li,
+footer h2 {
+
+    color: white !important;
+    /* this needs to be imporant or it will blend in with the background. */
 }
 
 /* start on some media queries */
